@@ -22,44 +22,46 @@ header {
   text-align: center;
 }
 
-h1 { font-size: 34px; }
-h2 { color: #1e3a8a; }
+h1 { font-size: 34px; margin-bottom:10px; }
+h2 { margin-bottom:20px; }
 
 .cta-big {
   margin-top: 30px;
 }
 
-/* BOTONES GRANDES */
+/* BOTONES PRO */
 .btn-big {
   display: block;
   width: 90%;
   max-width: 420px;
-  margin: 12px auto;
-  padding: 18px;
-  font-size: 18px;
-  border-radius: 12px;
+  margin: 14px auto;
+  padding: 20px;
+  font-size: 19px;
+  border-radius: 14px;
   text-decoration: none;
   font-weight: 600;
   text-align: center;
   transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-/* EFECTO LLAMADA */
+/* EFECTO VISUAL */
 .btn-big:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
-/* ANIMACIÓN SUAVE */
+/* ANIMACIÓN */
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.06); }
   100% { transform: scale(1); }
 }
 
 .call {
   background: #f97316;
   color: white;
-  animation: pulse 2s infinite;
+  animation: pulse 1.8s infinite;
 }
 
 .whatsapp {
@@ -84,26 +86,34 @@ section {
 
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 22px;
+  border-radius: 14px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .highlight {
   background: #fff7ed;
-  padding: 18px;
-  border-radius: 10px;
-  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
   font-weight: 500;
 }
 
-/* CTA FINAL */
+/* CTA FINAL CORREGIDO */
 .cta-final {
   background: #0f172a;
   color: white;
-  border-radius: 16px;
-  padding: 40px 20px;
+  border-radius: 18px;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.cta-final h2 {
+  color: white;
+}
+
+.cta-final p {
+  color: #e5e7eb;
 }
 
 footer {
@@ -139,32 +149,32 @@ footer {
 
       <div class="card">
         <h4>🔌 Subida de potencia</h4>
-        <p>En condiciones normales no requiere obra. Se revisa el cuadro eléctrico para comprobar si soporta la potencia.</p>
+        <p>Normalmente no requiere obra. Se revisa el cuadro eléctrico para validar la instalación.</p>
       </div>
 
       <div class="card">
         <h4>📉 Bajada de potencia</h4>
-        <p>No suele requerir boletín, pero en algunos casos la compañía puede pedir revisión.</p>
+        <p>No suele requerir boletín, pero puede ser necesario en algunos casos.</p>
       </div>
 
       <div class="card">
         <h4>⚡ Corte de luz</h4>
-        <p>Si el suministro ha estado inactivo, necesitarás boletín para reactivarlo.</p>
+        <p>Si ha pasado tiempo sin suministro, necesitarás boletín para reactivarlo.</p>
       </div>
 
       <div class="card">
         <h4>🧾 Retirada de contador</h4>
-        <p>Para volver a contratar la luz, es habitual que exijan un boletín actualizado.</p>
+        <p>Para volver a contratar la luz, se exige un boletín actualizado.</p>
       </div>
 
       <div class="card">
         <h4>🏠 Viviendas</h4>
-        <p>Instalaciones antiguas o altas nuevas requieren certificación.</p>
+        <p>Altas nuevas o instalaciones antiguas requieren certificación.</p>
       </div>
 
       <div class="card">
         <h4>🏢 Locales</h4>
-        <p>Aperturas o reformas necesitan boletín eléctrico.</p>
+        <p>Aperturas, reformas o cambios de actividad necesitan boletín.</p>
       </div>
 
     </div>
@@ -172,7 +182,7 @@ footer {
   </div>
 </section>
 
-<!-- CTA FINAL BIEN COLOCADO -->
+<!-- CTA FINAL BIEN HECHO -->
 <section>
   <div class="container">
     <div class="cta-final">
@@ -200,18 +210,20 @@ bottom: 20px;
 right: 20px;
 background: #25D366;
 color: white;
-padding: 15px;
+padding: 18px;
 border-radius: 50px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 ">💬</a>
 
 <a href="tel:665786502" style="
 position: fixed;
-bottom: 80px;
+bottom: 85px;
 right: 20px;
 background: #f97316;
 color: white;
-padding: 15px;
+padding: 18px;
 border-radius: 50px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 ">📞</a>
 
 </body>
