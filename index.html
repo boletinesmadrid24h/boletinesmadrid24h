@@ -23,13 +23,11 @@ header {
 }
 
 h1 { font-size: 34px; margin-bottom:10px; }
-h2 { margin-bottom:20px; }
 
 .cta-big {
   margin-top: 30px;
 }
 
-/* BOTONES */
 .btn-big {
   display: block;
   width: 90%;
@@ -49,7 +47,6 @@ h2 { margin-bottom:20px; }
   transform: scale(1.08);
 }
 
-/* ANIMACIÓN */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.06); }
@@ -97,13 +94,22 @@ section {
   font-weight: 500;
 }
 
-/* BLOQUE EXPLICACIÓN */
 .info-box {
   background: white;
   border-radius: 14px;
   padding: 30px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   text-align: center;
+}
+
+/* BLOQUE PRECIO */
+.price-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 /* CTA FINAL */
@@ -151,7 +157,7 @@ footer {
 
       <div class="card">
         <h4>🔌 Subida de potencia</h4>
-        <p>En condiciones normales no requiere obra. Se revisa el cuadro eléctrico para validar la instalación.</p>
+        <p>Normalmente no requiere obra. Se revisa el cuadro eléctrico.</p>
       </div>
 
       <div class="card">
@@ -161,24 +167,43 @@ footer {
 
       <div class="card">
         <h4>⚡ Corte de luz</h4>
-        <p>Si el suministro ha estado inactivo, necesitarás boletín para reactivarlo.</p>
+        <p>Si ha pasado tiempo sin suministro, necesitarás boletín.</p>
       </div>
 
       <div class="card">
         <h4>🧾 Retirada de contador</h4>
-        <p>Para volver a contratar la luz, se exige un boletín actualizado.</p>
+        <p>Para volver a contratar la luz, se exige boletín actualizado.</p>
       </div>
 
       <div class="card">
         <h4>🏠 Viviendas</h4>
-        <p>Altas nuevas o instalaciones antiguas requieren certificación.</p>
+        <p>Instalaciones antiguas o altas nuevas requieren certificación.</p>
       </div>
 
       <div class="card">
         <h4>🏢 Locales</h4>
-        <p>Aperturas, reformas o cambios de actividad necesitan boletín.</p>
+        <p>Aperturas o reformas necesitan boletín.</p>
       </div>
 
+    </div>
+
+    <!-- BLOQUE PRECIO -->
+    <div class="price-box">
+      <h3>💰 ¿Quieres saber cuánto cuesta?</h3>
+      <p>Te explicamos precios reales y qué influye en cada caso</p>
+
+      <a href="precio-boletin.html" style="
+        display:inline-block;
+        margin-top:15px;
+        background:#f97316;
+        color:white;
+        padding:14px 24px;
+        border-radius:10px;
+        text-decoration:none;
+        font-weight:600;
+      ">
+        Ver precios →
+      </a>
     </div>
 
   </div>
