@@ -12,32 +12,29 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background: #f4f7fb;
-  color: #222;
-  text-align: center;
+  color: #1f2937;
 }
 
 header {
   background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: white;
   padding: 60px 20px;
+  text-align: center;
 }
 
-h1 {
-  font-size: 34px;
-}
+h1 { font-size: 34px; }
+h2 { color: #1e3a8a; }
 
-.cta {
-  margin-top: 20px;
-}
+.cta { margin-top: 20px; }
 
 .btn {
   display: inline-block;
   padding: 15px 25px;
   margin: 10px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
   border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 .call { background: #f97316; }
@@ -45,33 +42,51 @@ h1 {
 
 section {
   padding: 40px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
   background: white;
-  margin: 20px;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.card h4 {
+  margin-top: 0;
 }
 
-li {
-  margin: 10px 0;
+.highlight {
+  background: #fff7ed;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .price {
   font-size: 28px;
   color: #f97316;
+  text-align: center;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  text-align: left;
+img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
 }
 
 footer {
+  text-align: center;
   padding: 20px;
 }
 </style>
@@ -90,121 +105,93 @@ footer {
 </header>
 
 <section>
-  <h3>¿Qué incluye el boletín?</h3>
-  <ul>
-    <li>✔ Certificado eléctrico oficial</li>
-    <li>✔ Revisión de instalación</li>
-    <li>✔ Firma de técnico autorizado</li>
-    <li>✔ Entrega en 24h</li>
-  </ul>
+  <div class="container">
+    <h2>¿Qué incluye?</h2>
+    <div class="cards">
+      <div class="card">✔ Certificado oficial</div>
+      <div class="card">✔ Revisión completa</div>
+      <div class="card">✔ Técnico autorizado</div>
+      <div class="card">✔ Entrega en 24h</div>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h3>Precio</h3>
-  <p class="price">Desde 90€</p>
+  <div class="container">
+    <h2>Precio</h2>
+    <p class="price">Desde 90€</p>
+  </div>
 </section>
 
+<!-- BLOQUE IMPORTANTE MEJORADO -->
 <section>
-  <h3>¿Cómo funciona?</h3>
-  <p>1. Nos llamas o escribes</p>
-  <p>2. Revisamos tu caso</p>
-  <p>3. Emitimos el boletín en 24h</p>
-</section>
-
-<!-- BLOQUE CASOS REALES -->
-<section>
-  <h3>¿En qué casos necesitas un boletín eléctrico?</h3>
-
   <div class="container">
 
-    <h4>🔌 Subida de potencia</h4>
-    <p>
-    En condiciones normales no conlleva obra. Dependiendo de la potencia que quieras contratar, basta con revisar el cuadro eléctrico para comprobar si la instalación lo permite.
-    </p>
+    <h2>¿Cuándo necesitas un boletín eléctrico?</h2>
 
-    <h4>📉 Bajada de potencia</h4>
-    <p>
-    Generalmente no requiere boletín, pero en algunos casos la compañía puede pedir una revisión.
-    </p>
+    <div class="highlight">
+      📌 El boletín eléctrico tiene una vigencia de aproximadamente <strong>20 años</strong>.  
+      Por eso, cuando pasan muchos años sin suministro o la instalación es antigua, la compañía exige actualizarlo para garantizar la seguridad.
+    </div>
 
-    <h4>⚡ Me han cortado la luz</h4>
-    <p>
-    Si el suministro ha estado inactivo mucho tiempo o la instalación no cumple normativa, necesitarás un boletín para reactivarlo.
-    </p>
+    <div class="cards">
 
-    <h4>🧾 Me han quitado el contador</h4>
-    <p>
-    Para volver a contratar la luz, muchas compañías exigen un boletín actualizado.
-    </p>
+      <div class="card">
+        <h4>🔌 Subida de potencia</h4>
+        <p>Normalmente no requiere obra. Se revisa el cuadro eléctrico para comprobar si soporta la nueva potencia.</p>
+      </div>
 
-    <h4>🏠 Vivienda nueva o sin uso</h4>
-    <p>
-    En viviendas nuevas o que llevan años sin suministro, es obligatorio presentar boletín para dar de alta la luz.
-    </p>
+      <div class="card">
+        <h4>📉 Bajada de potencia</h4>
+        <p>En general no se necesita boletín, pero en algunos casos la compañía puede solicitar revisión.</p>
+      </div>
 
-    <h4>🔄 Cambio de titular</h4>
-    <p>
-    En algunos casos, al cambiar el titular del contrato, la compañía puede solicitar un boletín si la instalación es antigua.
-    </p>
+      <div class="card">
+        <h4>⚡ Corte de luz</h4>
+        <p>Si ha pasado mucho tiempo sin suministro, necesitarás boletín para reactivar el servicio.</p>
+      </div>
 
-    <h4>⚠️ Instalación antigua</h4>
-    <p>
-    Si la instalación tiene muchos años, es habitual que no cumpla normativa y necesite certificación.
-    </p>
+      <div class="card">
+        <h4>🧾 Retirada de contador</h4>
+        <p>Para volver a contratar la luz, es habitual que exijan un boletín actualizado.</p>
+      </div>
 
-    <h4>🏢 Apertura de local</h4>
-    <p>
-    En locales comerciales es habitual necesitar boletín para abrir actividad o cambiar uso.
-    </p>
+      <div class="card">
+        <h4>🏠 Viviendas</h4>
+        <p>Altas nuevas, instalaciones antiguas o cambios importantes suelen requerir boletín.</p>
+      </div>
 
-    <h4>🔧 Inspección eléctrica</h4>
-    <p>
-    Si has pasado una inspección o te han requerido actualizar la instalación, necesitarás boletín.
-    </p>
+      <div class="card">
+        <h4>🏢 Locales</h4>
+        <p>Aperturas, reformas o cambios de actividad requieren certificación eléctrica.</p>
+      </div>
+
+    </div>
+
+    <!-- IMAGEN VISUAL -->
+    
+::contentReference[oaicite:0]{index=0}
+
 
   </div>
-
-  <div class="cta">
-    <a href="tel:665786502" class="btn call">📞 Consultar mi caso</a>
-    <a href="https://wa.me/34665786502" class="btn whatsapp">💬 Preguntar por WhatsApp</a>
-  </div>
-
 </section>
 
 <section>
-  <h3>¿Lo necesitas hoy?</h3>
-  <div class="cta">
-    <a href="tel:665786502" class="btn call">📞 Llamar ahora</a>
-    <a href="https://wa.me/34665786502" class="btn whatsapp">💬 WhatsApp</a>
+  <div class="container">
+    <h2>¿Lo necesitas hoy?</h2>
+
+    <div class="cta">
+      <a href="tel:665786502" class="btn call">📞 Llamar ahora</a>
+      <a href="https://wa.me/34665786502" class="btn whatsapp">💬 WhatsApp</a>
+    </div>
   </div>
 </section>
-
-<!-- BLOQUE EXPLICACIÓN -->
-<div style="
-  background: #f1f5f9;
-  padding: 25px;
-  border-radius: 14px;
-  margin: 30px;
-  text-align: center;
-">
-  <h3>¿Tienes dudas?</h3>
-  <p>Te explicamos todo de forma clara</p>
-  <a href="boletin-electrico.html" style="
-    background:#1e3a8a;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
-  ">
-    Ver explicación →
-  </a>
-</div>
 
 <footer>
   © BoletinesMadrid24h
 </footer>
 
-<!-- BOTÓN WHATSAPP -->
+<!-- BOTONES FLOTANTES -->
 <a href="https://wa.me/34665786502" style="
 position: fixed;
 bottom: 20px;
@@ -213,11 +200,8 @@ background: #25D366;
 color: white;
 padding: 15px;
 border-radius: 50px;
-">
-💬
-</a>
+">💬</a>
 
-<!-- BOTÓN LLAMAR -->
 <a href="tel:665786502" style="
 position: fixed;
 bottom: 80px;
@@ -226,9 +210,7 @@ background: #f97316;
 color: white;
 padding: 15px;
 border-radius: 50px;
-">
-📞
-</a>
+">📞</a>
 
 </body>
 </html>
