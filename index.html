@@ -22,31 +22,53 @@ header {
   text-align: center;
 }
 
-h1 { font-size: 34px; margin-bottom:10px;}
-h2 { color: #1e3a8a; margin-bottom:20px;}
+h1 { font-size: 34px; }
+h2 { color: #1e3a8a; }
 
 .cta-big {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
+/* BOTONES GRANDES */
 .btn-big {
   display: block;
   width: 90%;
-  max-width: 400px;
-  margin: 10px auto;
+  max-width: 420px;
+  margin: 12px auto;
   padding: 18px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
-.call { background: #f97316; color:white; }
-.whatsapp { background: #25D366; color:white; }
+/* EFECTO LLAMADA */
+.btn-big:hover {
+  transform: scale(1.05);
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.call {
+  background: #f97316;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
 
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .container {
@@ -72,12 +94,16 @@ section {
   padding: 18px;
   border-radius: 10px;
   margin-bottom: 25px;
+  font-weight: 500;
 }
 
-img {
-  width: 100%;
-  border-radius: 12px;
-  margin-top: 20px;
+/* CTA FINAL */
+.cta-final {
+  background: #0f172a;
+  color: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 footer {
@@ -106,56 +132,59 @@ footer {
 
     <div class="highlight">
       📌 El boletín eléctrico tiene una vigencia de <strong>20 años</strong>.  
-      Cuando han pasado muchos años sin suministro o la instalación es antigua, la compañía exige actualizarlo para garantizar que cumple el reglamento y es segura.
+      Por eso, cuando te cortan la luz o retiran el contador, la compañía exige comprobar que la instalación cumple el reglamento antes de volver a dar suministro.
     </div>
 
     <div class="cards">
 
       <div class="card">
         <h4>🔌 Subida de potencia</h4>
-        <p>En condiciones normales no requiere obra. Se revisa el cuadro eléctrico para comprobar si soporta la nueva potencia.</p>
+        <p>En condiciones normales no requiere obra. Se revisa el cuadro eléctrico para comprobar si soporta la potencia.</p>
       </div>
 
       <div class="card">
         <h4>📉 Bajada de potencia</h4>
-        <p>No suele requerir boletín, aunque en algunos casos la compañía puede pedir una revisión.</p>
+        <p>No suele requerir boletín, pero en algunos casos la compañía puede pedir revisión.</p>
       </div>
 
       <div class="card">
         <h4>⚡ Corte de luz</h4>
-        <p>Si el suministro ha estado mucho tiempo inactivo, necesitarás boletín para reactivarlo.</p>
+        <p>Si el suministro ha estado inactivo, necesitarás boletín para reactivarlo.</p>
       </div>
 
       <div class="card">
         <h4>🧾 Retirada de contador</h4>
-        <p>Para volver a contratar la luz, la compañía suele exigir un boletín actualizado.</p>
+        <p>Para volver a contratar la luz, es habitual que exijan un boletín actualizado.</p>
       </div>
 
       <div class="card">
         <h4>🏠 Viviendas</h4>
-        <p>Altas nuevas, instalaciones antiguas o viviendas sin uso requieren boletín.</p>
+        <p>Instalaciones antiguas o altas nuevas requieren certificación.</p>
       </div>
 
       <div class="card">
         <h4>🏢 Locales</h4>
-        <p>Aperturas, reformas o cambios de actividad necesitan certificación eléctrica.</p>
+        <p>Aperturas o reformas necesitan boletín eléctrico.</p>
       </div>
 
     </div>
 
-    <!-- IMAGEN REAL -->
-    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758" alt="Instalación eléctrica">
-
   </div>
 </section>
 
+<!-- CTA FINAL BIEN COLOCADO -->
 <section>
   <div class="container">
-    <h2>¿Lo necesitas hoy?</h2>
+    <div class="cta-final">
 
-    <div class="cta-big">
-      <a href="tel:665786502" class="btn-big call">📞 Llamar ahora</a>
-      <a href="https://wa.me/34665786502" class="btn-big whatsapp">💬 WhatsApp ahora</a>
+      <h2>¿Necesitas el boletín hoy?</h2>
+      <p>Respuesta inmediata. Sin esperas.</p>
+
+      <div class="cta-big">
+        <a href="tel:665786502" class="btn-big call">📞 Llamar ahora</a>
+        <a href="https://wa.me/34665786502" class="btn-big whatsapp">💬 WhatsApp ahora</a>
+      </div>
+
     </div>
   </div>
 </section>
