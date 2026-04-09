@@ -24,12 +24,6 @@ header {
 
 h1 {
   font-size: 34px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-weight: 300;
-  margin-bottom: 25px;
 }
 
 .cta {
@@ -44,16 +38,10 @@ h2 {
   color: #fff;
   font-weight: 600;
   border-radius: 8px;
-  font-size: 16px;
 }
 
 .call { background: #f97316; }
 .whatsapp { background: #25D366; }
-
-.badges {
-  margin-top: 25px;
-  font-size: 14px;
-}
 
 section {
   padding: 40px 20px;
@@ -74,13 +62,17 @@ li {
 
 .price {
   font-size: 28px;
-  font-weight: 600;
   color: #f97316;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
 }
 
 footer {
   padding: 20px;
-  font-size: 14px;
 }
 </style>
 </head>
@@ -89,15 +81,11 @@ footer {
 
 <header>
   <h1>Boletín eléctrico en Madrid en 24h ⚡</h1>
-  <h2>Sin líos. Sin esperas. Desde 90€</h2>
+  <p>Sin líos. Sin esperas. Desde 90€</p>
 
   <div class="cta">
     <a href="tel:665786502" class="btn call">📞 Llamar ahora</a>
-    <a href="https://wa.me/34665786502?text=Hola%20quiero%20un%20boletin" class="btn whatsapp">💬 WhatsApp</a>
-  </div>
-
-  <div class="badges">
-    ✔ Instalador autorizado · ✔ Atención inmediata · ✔ Servicio en todo Madrid
+    <a href="https://wa.me/34665786502" class="btn whatsapp">💬 WhatsApp</a>
   </div>
 </header>
 
@@ -114,61 +102,102 @@ footer {
 <section>
   <h3>Precio</h3>
   <p class="price">Desde 90€</p>
-  <p>Sin sorpresas. Presupuesto rápido.</p>
 </section>
 
 <section>
   <h3>¿Cómo funciona?</h3>
-  <p>1. Escríbenos o llámanos</p>
-  <p>2. Te damos cita inmediata</p>
-  <p>3. Recibes tu boletín en menos de 24h</p>
+  <p>1. Nos llamas o escribes</p>
+  <p>2. Revisamos tu caso</p>
+  <p>3. Emitimos el boletín en 24h</p>
 </section>
 
+<!-- BLOQUE CASOS REALES -->
 <section>
-  <h3>Zona</h3>
-  <p>Madrid capital y alrededores</p>
+  <h3>¿En qué casos necesitas un boletín eléctrico?</h3>
+
+  <div class="container">
+
+    <h4>🔌 Subida de potencia</h4>
+    <p>
+    En condiciones normales no conlleva obra. Dependiendo de la potencia que quieras contratar, basta con revisar el cuadro eléctrico para comprobar si la instalación lo permite.
+    </p>
+
+    <h4>📉 Bajada de potencia</h4>
+    <p>
+    Generalmente no requiere boletín, pero en algunos casos la compañía puede pedir una revisión.
+    </p>
+
+    <h4>⚡ Me han cortado la luz</h4>
+    <p>
+    Si el suministro ha estado inactivo mucho tiempo o la instalación no cumple normativa, necesitarás un boletín para reactivarlo.
+    </p>
+
+    <h4>🧾 Me han quitado el contador</h4>
+    <p>
+    Para volver a contratar la luz, muchas compañías exigen un boletín actualizado.
+    </p>
+
+    <h4>🏠 Vivienda nueva o sin uso</h4>
+    <p>
+    En viviendas nuevas o que llevan años sin suministro, es obligatorio presentar boletín para dar de alta la luz.
+    </p>
+
+    <h4>🔄 Cambio de titular</h4>
+    <p>
+    En algunos casos, al cambiar el titular del contrato, la compañía puede solicitar un boletín si la instalación es antigua.
+    </p>
+
+    <h4>⚠️ Instalación antigua</h4>
+    <p>
+    Si la instalación tiene muchos años, es habitual que no cumpla normativa y necesite certificación.
+    </p>
+
+    <h4>🏢 Apertura de local</h4>
+    <p>
+    En locales comerciales es habitual necesitar boletín para abrir actividad o cambiar uso.
+    </p>
+
+    <h4>🔧 Inspección eléctrica</h4>
+    <p>
+    Si has pasado una inspección o te han requerido actualizar la instalación, necesitarás boletín.
+    </p>
+
+  </div>
+
+  <div class="cta">
+    <a href="tel:665786502" class="btn call">📞 Consultar mi caso</a>
+    <a href="https://wa.me/34665786502" class="btn whatsapp">💬 Preguntar por WhatsApp</a>
+  </div>
+
 </section>
 
 <section>
   <h3>¿Lo necesitas hoy?</h3>
   <div class="cta">
     <a href="tel:665786502" class="btn call">📞 Llamar ahora</a>
-    <a href="https://wa.me/34665786502?text=Hola%20quiero%20un%20boletin" class="btn whatsapp">💬 WhatsApp</a>
+    <a href="https://wa.me/34665786502" class="btn whatsapp">💬 WhatsApp</a>
   </div>
 </section>
 
-<!-- BLOQUE EXPLICACIÓN BIEN COLOCADO -->
+<!-- BLOQUE EXPLICACIÓN -->
 <div style="
-  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  background: #f1f5f9;
   padding: 25px;
   border-radius: 14px;
   margin: 30px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   text-align: center;
 ">
-
-  <div style="font-size:40px; margin-bottom:10px;">⚡</div>
-
-  <h3 style="margin-bottom:10px; color:#1e3a8a;">
-    ¿Tienes dudas sobre el boletín eléctrico?
-  </h3>
-
-  <p style="margin-bottom:20px; color:#555;">
-    Te explicamos cuándo lo necesitas, cuánto cuesta y cómo se hace
-  </p>
-
+  <h3>¿Tienes dudas?</h3>
+  <p>Te explicamos todo de forma clara</p>
   <a href="boletin-electrico.html" style="
-    display:inline-block;
     background:#1e3a8a;
     color:white;
-    padding:14px 22px;
+    padding:12px 20px;
     border-radius:8px;
     text-decoration:none;
-    font-weight:600;
   ">
-    Ver explicación completa →
+    Ver explicación →
   </a>
-
 </div>
 
 <footer>
@@ -176,16 +205,14 @@ footer {
 </footer>
 
 <!-- BOTÓN WHATSAPP -->
-<a href="https://wa.me/34665786502?text=Hola%20quiero%20un%20boletin" target="_blank" style="
+<a href="https://wa.me/34665786502" style="
 position: fixed;
 bottom: 20px;
 right: 20px;
 background: #25D366;
 color: white;
-padding: 15px 20px;
+padding: 15px;
 border-radius: 50px;
-text-decoration: none;
-box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 ">
 💬
 </a>
@@ -197,11 +224,8 @@ bottom: 80px;
 right: 20px;
 background: #f97316;
 color: white;
-padding: 15px 18px;
+padding: 15px;
 border-radius: 50px;
-text-decoration: none;
-box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-font-weight: bold;
 ">
 📞
 </a>
