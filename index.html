@@ -29,7 +29,7 @@ h2 { margin-bottom:20px; }
   margin-top: 30px;
 }
 
-/* BOTONES PRO */
+/* BOTONES */
 .btn-big {
   display: block;
   width: 90%;
@@ -45,10 +45,8 @@ h2 { margin-bottom:20px; }
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-/* EFECTO VISUAL */
 .btn-big:hover {
   transform: scale(1.08);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
 /* ANIMACIÓN */
@@ -99,7 +97,16 @@ section {
   font-weight: 500;
 }
 
-/* CTA FINAL CORREGIDO */
+/* BLOQUE EXPLICACIÓN */
+.info-box {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* CTA FINAL */
 .cta-final {
   background: #0f172a;
   color: white;
@@ -108,13 +115,8 @@ section {
   text-align: center;
 }
 
-.cta-final h2 {
-  color: white;
-}
-
-.cta-final p {
-  color: #e5e7eb;
-}
+.cta-final h2 { color: white; }
+.cta-final p { color: #e5e7eb; }
 
 footer {
   text-align: center;
@@ -149,17 +151,17 @@ footer {
 
       <div class="card">
         <h4>🔌 Subida de potencia</h4>
-        <p>Normalmente no requiere obra. Se revisa el cuadro eléctrico para validar la instalación.</p>
+        <p>En condiciones normales no requiere obra. Se revisa el cuadro eléctrico para validar la instalación.</p>
       </div>
 
       <div class="card">
         <h4>📉 Bajada de potencia</h4>
-        <p>No suele requerir boletín, pero puede ser necesario en algunos casos.</p>
+        <p>No suele requerir boletín, aunque puede ser necesario en algunos casos.</p>
       </div>
 
       <div class="card">
         <h4>⚡ Corte de luz</h4>
-        <p>Si ha pasado tiempo sin suministro, necesitarás boletín para reactivarlo.</p>
+        <p>Si el suministro ha estado inactivo, necesitarás boletín para reactivarlo.</p>
       </div>
 
       <div class="card">
@@ -182,7 +184,32 @@ footer {
   </div>
 </section>
 
-<!-- CTA FINAL BIEN HECHO -->
+<!-- BLOQUE EXPLICACIÓN -->
+<section>
+  <div class="container">
+
+    <div class="info-box">
+      <h3>¿Tienes dudas sobre tu caso?</h3>
+      <p>Te explicamos todo de forma clara y sin tecnicismos</p>
+
+      <a href="boletin-electrico.html" style="
+        display:inline-block;
+        margin-top:15px;
+        background:#1e3a8a;
+        color:white;
+        padding:14px 24px;
+        border-radius:10px;
+        text-decoration:none;
+        font-weight:600;
+      ">
+        Ver explicación completa →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA FINAL -->
 <section>
   <div class="container">
     <div class="cta-final">
